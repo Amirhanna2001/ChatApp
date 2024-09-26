@@ -1,5 +1,7 @@
 using RealTimeChatApp.DataServices;
 using RealTimeChatApp.Hubs;
+using RealTimeChatApp.Models;
+using System.Collections.Concurrent;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors();
-builder.Services.AddSingleton<SharedDb>();
+builder.Services.AddSingleton<ConcurrentDictionary<string, UserConnection>>();
 
 var app = builder.Build();
 
