@@ -12,14 +12,21 @@ namespace RealTimeChatApp.Hubs
 
         public async Task JoinChat(UserConnection user)
         {
-            await Clients.All.SendAsync("ReceiveMessage","admin", $"{user.Username} has joined the chat app.",DateTime.Now);
+            await Groups.AddToGroupAsync(Context.ConnectionId, user.ChatRoom);
+            _db._connections[Context.ConnectionId] = user;
+            await Clients.Group(user.ChatRoom)
+                .SendAsync("ReceiveMessage", user.Username, $"{user.Username} has joined {user.ChatRoom} chat", DateTime.Now);
+
+            await SendConnectedUsers(user.ChatRoom);
+
+            //await Clients.All.SendAsync("ReceiveMessage",user.Username, $"{user.Username} has joined the chat app.",DateTime.Now);
         }
         public async Task JoinSpecificChat(UserConnection user)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId,user.ChatRoom);
             _db._connections[Context.ConnectionId] = user;
             await Clients.Group(user.ChatRoom)
-                .SendAsync("ReceiveMessage","admin",$"{user.Username} has joined {user.ChatRoom} chat", DateTime.Now);
+                .SendAsync("ReceiveMessage", user.Username, $"{user.Username} has joined {user.ChatRoom} chat", DateTime.Now);
 
             await SendConnectedUsers(user.ChatRoom);
         }

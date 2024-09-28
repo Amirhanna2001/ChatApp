@@ -9,18 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|f:\\college\\dotnet\\projects\\chatapp\\back-end\\realtimechatapp\\realtimechatapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|solutionrelative:realtimechatapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|f:\\college\\dotnet\\projects\\chatapp\\back-end\\realtimechatapp\\realtimechatapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|solutionrelative:realtimechatapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|f:\\college\\dotnet\\projects\\chatapp\\back-end\\realtimechatapp\\realtimechatapp\\models\\userconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|solutionrelative:realtimechatapp\\models\\userconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|f:\\college\\dotnet\\projects\\chatapp\\back-end\\realtimechatapp\\realtimechatapp\\dataservices\\shareddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86BBC0FA-39D6-46F8-9468-BE2F21526609}|RealTimeChatApp\\RealTimeChatApp.csproj|solutionrelative:realtimechatapp\\dataservices\\shareddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "RealTimeChatApp\\Properties\\launchSettings.json",
-              "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "RealTimeChatApp\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-26T11:58:28.928Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Program.cs",
+              "RelativeDocumentMoniker": "RealTimeChatApp\\Program.cs",
+              "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Program.cs",
+              "RelativeToolTip": "RealTimeChatApp\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T15:17:49.926Z",
               "EditorCaption": ""
             },
             {
@@ -67,53 +55,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SharedDb.cs",
-              "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\DataServices\\SharedDb.cs",
-              "RelativeDocumentMoniker": "RealTimeChatApp\\DataServices\\SharedDb.cs",
-              "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\DataServices\\SharedDb.cs",
-              "RelativeToolTip": "RealTimeChatApp\\DataServices\\SharedDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:10:36.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Program.cs",
-              "RelativeDocumentMoniker": "RealTimeChatApp\\Program.cs",
-              "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Program.cs",
-              "RelativeToolTip": "RealTimeChatApp\\Program.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T13:54:07.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "RealTimeChatApp\\Hubs\\ChatHub.cs",
               "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "RealTimeChatApp\\Hubs\\ChatHub.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA1wCYAAAB2AAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T13:42:37.71Z",
+              "WhenOpened": "2024-09-28T12:19:44.176Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserConnection.cs",
-              "DocumentMoniker": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Models\\UserConnection.cs",
-              "RelativeDocumentMoniker": "RealTimeChatApp\\Models\\UserConnection.cs",
-              "ToolTip": "F:\\College\\DotNet\\Projects\\ChatApp\\Back-End\\RealTimeChatApp\\RealTimeChatApp\\Models\\UserConnection.cs",
-              "RelativeToolTip": "RealTimeChatApp\\Models\\UserConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T13:26:29.807Z"
             }
           ]
         }

@@ -1,42 +1,39 @@
 using RealTimeChatApp.DataServices;
 using RealTimeChatApp.Hubs;
-using RealTimeChatApp.Models;
-using System.Collections.Concurrent;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddSignalR();
+builder.Services.AddSingleton<SharedDb>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddCors();
-builder.Services.AddSingleton<ConcurrentDictionary<string, UserConnection>>();
-
+builder.Services.AddSignalR();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")  
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();  
+    });
+});
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseRouting();
 
-app.UseAuthorization();
+app.UseCors();
 
-app.UseCors(opt =>
+app.UseEndpoints(endpoints =>
 {
-    opt.AllowAnyOrigin()
-    .AllowAnyHeader()
-    .AllowAnyMethod();
-
-
+    endpoints.MapHub<ChatHub>("/chat");
+    endpoints.MapControllers();
 });
-app.MapControllers();
-app.MapHub<ChatHub>("/chat");
-
 
 app.Run();
